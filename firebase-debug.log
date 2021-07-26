@@ -1,0 +1,39 @@
+[debug] [2021-07-25T19:42:41.889Z] ----------------------------------------------------------------------
+[debug] [2021-07-25T19:42:41.891Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\arkin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-25T19:42:41.892Z] CLI Version:   9.16.0
+[debug] [2021-07-25T19:42:41.892Z] Platform:      win32
+[debug] [2021-07-25T19:42:41.892Z] Node Version:  v14.17.3
+[debug] [2021-07-25T19:42:41.893Z] Time:          Mon Jul 26 2021 01:12:41 GMT+0530 (India Standard Time)
+[debug] [2021-07-25T19:42:41.893Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-25T19:42:41.900Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-25T19:42:41.900Z] > authorizing via signed-in user (armaanpal25@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\arkin\OneDrive\Desktop\projectfile\newp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-07-25T19:43:11.773Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-07-25T19:43:12.517Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-07-25T19:43:12.517Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project armaan-portfolio (Armaan-portfolio) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
