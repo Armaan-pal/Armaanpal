@@ -68,9 +68,11 @@
                     <p class="about__text">{{about.descriotion}}</p>
 
                     <div class="about__social">
-                        <a href="linkedin.com/in/armaan-pal" class="about__social-icon"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/Armaan-pal" class="about__social-icon"><i class='bx bxl-github'></i></a>
-                       <!-- <a href="#" class="about__social-icon"><i class='bx bxl-dribbble'></i></a>-->
+                        <a href="linkedin.com/in/armaan-pal" class="about__social-icon"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/Armaan-pal" class="about__social-icon"><i
+                                class='bx bxl-github'></i></a>
+                        <!-- <a href="#" class="about__social-icon"><i class='bx bxl-dribbble'></i></a>-->
                     </div>
                 </div>
             </div>
@@ -86,9 +88,9 @@
                     <div class="skills_box">
                         {%for category in categories %}
                         <h3 class="skills__subtitle">{{category.name}}</h3>
-                            {%for skills in category.skills_set.all%}
-                                <span class="skills_name">{{skills.skill_name}}</span>
-                            {%endfor%}
+                        {%for skills in category.skills_set.all%}
+                        <span class="skills__name">{{skills.skill_name}}</span>
+                        {%endfor%}
                         {%endfor%}
                     </div>
 
@@ -107,15 +109,15 @@
             <div class="portfolio__container bd-grid">
                 {%for portfolio in portfolios %}
 
-                    <div class="portfolio__img">
-                        <img src="{{ portfolio.image.url }}" alt="">
+                <div class="portfolio__img">
+                    <img src="{{ portfolio.image.url }}" alt="">
 
-                        <div class="portfolio__link">
-                            <a href="{{ portfolio.link }}" class="portfolio__link-name">View details</a>
-                        </div>
+                    <div class="portfolio__link">
+                        <a href="{{ portfolio.link }}" class="portfolio__link-name">View details</a>
                     </div>
+                </div>
                 {%endfor%}
-                
+
             </div>
         </section>
 
@@ -135,13 +137,14 @@
                     <span class="contact__text">133/619 Transport Nagar, Kanpur</span>
                 </div>
 
-                <form action="" class="contact__form">
+                <form action="/contact" method="POST" class="contact__form">
+                    {% csrf_token %}
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
+                        <input type="text" placeholder="Name" class="contact__input" name="name">
+                        <input type="mail" placeholder="Email" class="contact__input" name="Email">
                     </div>
 
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <textarea name="content" id="content" cols="0" rows="10" class="contact__input"></textarea>
 
                     <input type="submit" value="Enviar" class="contact__button">
                 </form>
@@ -153,9 +156,10 @@
     <footer class="footer section">
         <div class="footer__container bd-grid">
             <div class="footer__data">
-                <h2 class="footer__title">ARMAAN PAL</h2>
-                <p class="footer__text">I'm Armaan Pal and this is my personal website</p>
+                <h2 class="footer__title">COPYRIGHT</h2>
+                <p class="footer__text"> Copyright &copy; 2021 All Rights Reserved</p>
             </div>
+
 
             <div class="footer__data">
                 <h2 class="footer__title">EXPLORE</h2>
@@ -169,8 +173,9 @@
             </div>
 
             <div class="footer__data">
-                <h2 class="footer__title">FOLLOW</h2>
-                <a href="https://www.instagram.com/armaanpal_/" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                <h2 class="footer__title">CONNECT</h2>
+                <a href="https://www.instagram.com/armaanpal_/" class="footer__social"><i
+                        class='bx bxl-instagram'></i></a>
                 <a href="https://github.com/Armaan-pal" class="footer__social"><i class='bx bxl-github'></i></a>
                 <a href="linkedin.com/in/armaan-pal" class="footer__social"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://twitter.com/Armaanpal2" class="footer__social"><i class='bx bxl-twitter'></i></a>
@@ -178,6 +183,7 @@
 
 
         </div>
+
     </footer>
 
     <!--===== SCROLL REVEAL =====-->

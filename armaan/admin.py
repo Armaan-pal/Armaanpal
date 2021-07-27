@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db import models
-from .models import Home, About, profile, category, Skills, Portfolio
+from .models import Contact, Home, About, profile, category, Skills, Portfolio
 
 
 # Home
@@ -39,3 +39,5 @@ class CategoryAdmin(admin.ModelAdmin):
 
 admin.site.register(Portfolio)
 
+#contact
+admin.site.register(Contact)
